@@ -14,7 +14,7 @@ const Scrollbar = forwardRef(({ children, sx, ...other }, ref) => {
 
   if (mobile) {
     return (
-      <Box ref={ref} sx={{ overflow: 'auto', ...sx }} {...other}>
+      <Box ref={ref} sx={{ overflow: 'auto', ...sx }} {...other} style={{background: "#06063b", color: "white"}}>
         {children}
       </Box>
     );
